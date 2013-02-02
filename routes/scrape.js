@@ -15,12 +15,18 @@ exports.test = function (req, res) {
 };
 
 exports.scrape = function (req, res) {
-  scrape(req.body.url, function (err) {
+  if (!req.body.url) {
     res.json({
-      err: true
+      err: 'No url provided!'
     });
-    console.warn(err);
-  }, function (price) {
-    res.json(price);
-  });
+  } else {
+    scrape(req.body.url, function (err) {
+      res.json({
+        err: err
+      });
+      console.warn(err);
+    }, function (price) {
+      res.json(price);
+    });
+  }
 };
