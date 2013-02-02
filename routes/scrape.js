@@ -21,10 +21,10 @@ exports.scrape = function (req, res) {
     });
   } else {
     scrape(req.body.url, function (err) {
+      console.warn(err);
       res.json({
         err: err
       });
-      console.warn(err);
     }, function (price) {
       res.json(price);
     });
