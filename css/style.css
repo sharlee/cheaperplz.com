@@ -6,24 +6,43 @@ html {
 
 h1 {
 	font-family: "Finger Paint", cursive;
-	font-size: 90px;
+	font-size: 95px;
 	margin-bottom: 0px;
 	margin-top: 20px;
+	color: #333;
 }
 
 p {
 	font-family: "Text Me One", sans-serif;
-	margin-top: 25px;
-	font-size: 20px;
+	font-size: 23px;
+	margin-bottom: 0px;
+	color: #333;
+}
+
+#extension {
+	font-size: 15px;
+	margin-top: 7px;
+}
+
+#chickleft {
+	position: absolute;
+	left: 150px;
+	top: 200px;
+}
+
+#chickright {
+	position: absolute;
+	right: 150px;
+	top: 275px;
 }
 
 .download {
 	-moz-box-shadow:inset 0px 1px 0px 0px #ffffff;
 	-webkit-box-shadow:inset 0px 1px 0px 0px #ffffff;
 	box-shadow:inset 0px 1px 0px 0px #ffffff;
-	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #fad282), color-stop(1, #d8b62d) );
-	background:-moz-linear-gradient( center top, #fad282 5%, #d8b62d 100% );
-	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#fad282', endColorstr='#d8b62d');
+	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.1, #FFEB57), color-stop(1, #E3A60D) );
+	background:-moz-linear-gradient( center top, #FFEB57 5%, #E3A60D 100% );
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#FFEB57', endColorstr='#E3A60D');
 	background-color:#fad282;
 	-moz-border-radius:6px;
 	-webkit-border-radius:6px;
@@ -32,19 +51,19 @@ p {
 	display:inline-block;
 	color:#784309;
 	font-family:arial;
-	font-size:15px;
+	font-size:25px;
 	font-weight:bold;
-	padding:6px 24px;
+	padding:10px 50px;
 	text-decoration:none;
 	text-shadow:1px 1px 0px #ffffff;
-	margin-top: 50px;
+	margin-top: 70px;
 }
 
 .download:hover {
-	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #d8b62d), color-stop(1, #fad282) );
-	background:-moz-linear-gradient( center top, #d8b62d 5%, #fad282 100% );
-	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#d8b62d', endColorstr='#fad282');
-	background-color:#d8b62d;
+	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.1, #E3A60D), color-stop(1, #F2D309) );
+	background:-moz-linear-gradient( center top, #E3A60D 5%, #F2D309 100% );
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#E3A60D', endColorstr='#F2D309');
+	background-color:#E3A60D;
 }
 
 .download:active {
